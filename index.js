@@ -4,8 +4,8 @@ var answeredThreads = {};
 
 //created simple echo bot
 login({
-	email: 'anh.tuyet.9674',
-	password: '***'
+	email: 'coyestillwagen44@gmail.com',
+	password: 'CoyeM2000'
 }, function callback(err, api) {
 	if (err)
 		return console.error(err);
@@ -14,7 +14,7 @@ login({
 		console.log(message.threadID);
 		if (!answeredThreads.hasOwnProperty(message.threadID)) {
 			answeredThreads[message.threadID] = true;
-			api.sendMessage('BOT - Hiện tại mình đang ra ngoài', message.threadID);
+			api.sendMessage('test', message.threadID);
 		}
 	});
 });
